@@ -16,6 +16,25 @@ This is a web app that uses a database. A bookmark manager. A bookmark manager i
 
 This app uses the MVC (Model View Controller) pattern. When the user clicks to be able to see all bookmarks on the screen, the url /bookmarks is used. This is sent as a GET request to the app, hitting the controller first. The controller receives this request and a function is triggered which asks for .all from the Bookmark model (class). The bookmarks model is returned to the controller in the form of an array and then sent to the view, whereupon a view is created showing all the bookmarks, which is returned to the controller in html format. This is sent back as a response - to the browser - displaying all the bookmarks for the user to see.
 
+```
+* CREATE - POST /bookmarks
+* READ - GET /bookmarks/123
+* UPDATE - PATCH /bookmarks/123
+* DELETE - DELETE /bookmarks/123
+```
+```
+Verb    URI Pattern            Controller#action
+------  ---------------------  ------------------
+GET     /bookmarks           bookmarks#index
+POST    /bookmarks           bookmarks#create
+GET     /bookmarks/new       bookmarks#new
+GET     /bookmarks/:id/edit  bookmarks#edit
+GET     /bookmarks/:id       bookmarks#show
+PATCH   /bookmarks/:id       bookmarks#update
+PUT     /bookmarks/:id       bookmarks#update
+DELETE  /bookmarks/:id       bookmarks#destroy
+```
+
 ### Stack
 
 Sinatra (web framework) with ERB (embedded ruby)
