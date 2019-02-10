@@ -7,9 +7,13 @@ This is a web app that uses a database. A bookmark manager. A bookmark manager i
 ### User stories
 
 ```
-  As a user
+  As a time-pressed user
   So that I can see my favourite websites
   I'd like to see a list of bookmarks
+
+  As a time-pressed user
+  So that I can save a website
+  I would like to add the site's address and title to bookmark manager
 ```
 
 ### How it works
@@ -42,4 +46,11 @@ Test Suites - Capybara with RSpec
 
 ### How to install
 
+
+
 ### How to test
+
+```
+$ rspec
+$ rubocop
+```
