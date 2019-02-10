@@ -46,11 +46,29 @@ Test Suites - Capybara with RSpec
 
 ### How to install
 
+```
+$ git clone git@github.com:jdm79/bookmark_manager_new.git
+$ cd bookmark_manager_new
+$ bundle init
+```
 
+### How to set up the database
+
+* Connect to psql
+* Create the database using the psql command CREATE DATABASE bookmark_manager;
+* Connect to the database using the pqsl command \c bookmark_manager;
+* Run the query we have saved in the file 01_create_bookmarks_table.sql
 
 ### How to test
 
 ```
 $ rspec
 $ rubocop
+```
+
+### How to run the app
+
+```
+# In the root of the app 
+$ rackup
 ```
