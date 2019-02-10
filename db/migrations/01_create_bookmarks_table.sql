@@ -1,0 +1,1 @@
+CREATE TABLE bookmarks(id serial PRIMARY KEY, url varchar (60), created_on TIMESTAMP NOT NULL);
