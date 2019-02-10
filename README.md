@@ -7,13 +7,13 @@ This is a web app that uses a database. A bookmark manager. A bookmark manager i
 ### User stories
 
 ```
-  As a time-pressed user
-  So that I can see my favourite websites
-  I'd like to see a list of bookmarks
+As a time-pressed user
+So that I can see my favourite websites
+I'd like to see a list of bookmarks
 
-  As a time-pressed user
-  So that I can save a website
-  I would like to add the site's address and title to bookmark manager
+As a time-pressed user
+So that I can save a website
+I would like to add the site's address and title to bookmark manager
 ```
 
 ### How it works
@@ -42,6 +42,7 @@ DELETE  /bookmarks/:id       bookmarks#destroy
 ### Stack
 
 Sinatra (web framework) with ERB (embedded ruby)
+PostgreSQL (SQL database)
 Test Suites - Capybara with RSpec
 
 ### How to install
@@ -68,7 +69,7 @@ $ rubocop
 
 ### How to run the app
 
+(In the root of the app)
 ```
-# In the root of the app 
 $ rackup
 ```
