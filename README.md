@@ -60,10 +60,11 @@ $ bundle init
 * Connect to the database using the pqsl command \c bookmark_manager;
 * Run the query we have saved in the file 01_create_bookmarks_table.sql
 
-### We will also need a development and test database, as well as the production one above (just called bookmark_manager):
+### We will also need a test database, as well as the production one above (just called bookmark_manager):
 
-* Create the development database using the psql command CREATE DATABASE bookmark_manager_development;
 * Create the test database using the psql command CREATE DATABASE bookmark_manager_test;
+
+This database will be emptied, re-populated and used for each test. It will only hold data that is sent to it from the specs. 
 
 
 ### How to test
